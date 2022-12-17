@@ -1,0 +1,22 @@
+{
+  "name": "npx-lorem",
+  "version": "1.0.0",
+  "description": "npx lorem-ipsum generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "lorem": "./bin/index.js"
+  },
+  "keywords": [
+    "lorem",
+    "utility",
+    "text"
+  ],
+  "author": "Diego Garcia Cordeiro Souza",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.6.2"
+  }
+}
