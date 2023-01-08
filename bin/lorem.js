@@ -147,14 +147,15 @@ class LoremIpsum {
    * @return {string} A lorem ipsum string.
    */
   static loremByParagraphCount (paragraphCount) {
-    const lorem = paragraphs.reduce((acc, paragraph, index) => {
-      if (index >= paragraphCount) {
-        // Remove newlines after final paragraph
-        return acc.substring(0, acc.length - 2)
-      }
+    let lorem = ""
 
-      return acc + paragraph  + "\n\n"
-    }, "")
+    for (let i = 0; i < paragraphCount && i < paragraphs.length; i++) {
+      if (i >= paragraphCount || i >= paragraphs.length) {
+        lorem = lorem + paragraphs[i]
+        break
+      }
+      lorem = lorem + paragraphs[i] + "\n\n"
+    }
 
     return lorem
   }
