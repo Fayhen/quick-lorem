@@ -29,10 +29,9 @@ function main () {
   if (paragraphLimit) {
     console.log('paragraphs', paragraphLimit)
     result =  LoremIpsum.loremByParagraphCount(Number(paragraphLimit), !!spaced)
-    console.log("paragraph length", result.split("\n\n").length - 1)
+    console.log("paragraph length", result.split("\n\n").length)
   }
   
-  console.log("\n")
   console.log(result, "\n")
 }
 
