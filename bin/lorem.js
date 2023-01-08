@@ -262,6 +262,15 @@ class LoremIpsum {
 
     return lorem
   }
+
+  /**
+   * Returns the default lorem ipsum string.
+   *
+   * @returns {string} Default lorem ipsum string.
+   */
+  static loremDefault () {
+    return paragraphs[0]
+  }
 }
 
 module.exports = { LoremIpsum }
