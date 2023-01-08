@@ -5,6 +5,59 @@ const { defaultString, paragraphs} = require("./paragraphs")
  */
 class LoremIpsum {
   /**
+   * Capitalizes each work of a given string.
+   * 
+   * @param {string} text String to apply word capitalization.
+   * @returns {string} Capitalized string.
+   */
+  static applyCapitalization (text) {
+    const paragraphs = text.split("\n\n")
+
+    const capitalizedParagraphs = paragraphs.map((paragraph) => {
+      const words = paragraph.split(" ").map((word) => {
+        return word.charAt(0).toUpperCase() + word.substring(1)
+      })
+      return words.join(" ")
+    })
+
+    return capitalizedParagraphs.join("\n\n")
+  }
+
+  /**
+   * Converts a string to lowercase.
+   *
+   * @param {string} text String to be lowercased.
+   * @returns {string} Lowercase string.
+   */
+  static applyLowerCase (text) {
+    return text.toLowerCase()
+  }
+
+  /**
+   * Converts a string to uppercase.
+   *
+   * @param {string} text String to be uppercase.
+   * @returns {string} Uppercase string.
+   */
+  static applyUpperCase (text) {
+    return text.toUpperCase()
+  }
+
+  /**
+   * Converts a string to random case.
+   *
+   * @param {string} text
+   * @returns {string} Random case string.
+   */
+  static applyRadomCase (text) {
+    return text.split("").map(
+      (char) => {
+        return Math.round(Math.random()) ? char.toUpperCase() : char.toLowerCase()
+      }
+    ).join("")
+  }
+
+  /**
    * Returns a lorem ipsum string up to a certain character length. Number
    * of characters is capped at a 75000 maximum.
    *
