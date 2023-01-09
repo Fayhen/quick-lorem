@@ -72,6 +72,10 @@ class LoremIpsum {
     const MAX = 75000
     const separator = useNewlines ? "\n\n" : " "
     const separatorLength = separator.length
+
+    if (charNumber <= 1) {
+      return paragraphs[0].charAt(0)
+    }
   
     const start = paragraphs[0].substring(0, charNumber)
     paragraphs.shift()
@@ -117,6 +121,10 @@ class LoremIpsum {
       ? wordCount
       : MAX
 
+    if (wordCount <= 1) {
+      return paragraphs[0].split(" ")[0]
+    }
+
     const start = paragraphs[0].trim().split(" ").slice(0, limit).join(" ")
     paragraphs.shift()
 
@@ -146,6 +154,10 @@ class LoremIpsum {
    * @return {string} A lorem ipsum string.
    */
   static loremByParagraphCount (paragraphCount) {
+    if (paragraphCount <= 1) {
+      return paragraphs[0]
+    }
+
     let lorem = ""
 
     for (let i = 0; i < paragraphCount && i < paragraphs.length; i++) {
