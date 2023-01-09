@@ -116,7 +116,6 @@ class LoremIpsum {
     const limit = wordCount <= MAX
       ? wordCount
       : MAX
-    console.log("working with limit", limit)
 
     const start = paragraphs[0].trim().split(" ").slice(0, limit).join(" ")
     paragraphs.shift()
