@@ -1,7 +1,8 @@
 {
   "name": "npx-lorem",
   "version": "1.0.0",
-  "description": "npx lorem-ipsum generator",
+  "description": "A npx lorem ipsum generator",
+  "homepage": "https://github.com/Fayhen/npx-lorem",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,11 +12,13 @@
   },
   "keywords": [
     "lorem",
+    "ipsum",
+    "text",
     "utility",
-    "text"
+    "string"
   ],
-  "author": "Diego Garcia Cordeiro Souza",
-  "license": "ISC",
+  "author": "Diego Garcia Cordeiro Souza <diego00alfa@gmail.com> (https://github.com/Fayhen)",
+  "license": "MIT",
   "dependencies": {
     "yargs": "^17.6.2"
   }
