@@ -1,7 +1,7 @@
 {
-  "name": "npx-lorem",
+  "name": "quick-lorem",
   "version": "1.0.0",
-  "description": "A npx lorem ipsum generator",
+  "description": "A quick and easy command line lorem ipsum generator",
   "homepage": "https://github.com/Fayhen/npx-lorem",
   "main": "index.js",
   "scripts": {

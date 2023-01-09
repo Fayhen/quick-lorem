@@ -1,11 +1,11 @@
-# vuejs/core
-A simple npx package to output lorem ipsum string to the command line.
+# quick-lorem
+A simple npx package to output lorem ipsum strings to the command line, without much complication.
 
 ## Usage
-Simply run `npx x-lorem` on your terminal to output a lorem ipsum string.
+Simply run `npx quick-lorem` on your terminal to output a lorem ipsum string.
 
 ```bash
-npx x-lorem
+npx quick-lorem
 
 # Output
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus a odio eu imperdiet. Morbi auctor fringilla sollicitudin. Fusce id nisl urna. Quisque tristique odio et molestie semper. Maecenas sagittis justo mauris, id commodo nunc commodo nec. Nullam suscipit tempus velit, sit amet feugiat sem tincidunt sed. 
@@ -30,7 +30,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Outputting a character length:
   ```bash
-  npx x-lorem --chars 15
+  npx quick-lorem --chars 15
 
   # Output
   Lorem ipsum dol
@@ -38,7 +38,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
   - Outputting a word count:
   ```bash
-  npx x-lorem --words 5
+  npx quick-lorem --words 5
 
   # Output
   Lorem ipsum dolor sit amet,
@@ -46,7 +46,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Outputting a paragraph count:
   ```bash
-  npx x-lorem --paragraphs 2
+  npx quick-lorem --paragraphs 2
 
   # Output
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus a odio eu imperdiet. Morbi auctor fringilla sollicitudin. Fusce id nisl urna. Quisque tristique odio et molestie semper. Maecenas sagittis justo mauris, id commodo nunc commodo nec. Nullam suscipit tempus velit, sit amet feugiat sem tincidunt sed. Cras et condimentum turpis. Duis congue eleifend nibh, non condimentum odio elementum at. Maecenas laoreet tellus eget mollis sodales. Mauris sed hendrerit elit. In blandit nunc arcu, at blandit ipsum gravida sit amet.
@@ -56,7 +56,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Lowercase output
   ```bash
-  npx x-lorem --chars 100 --lowercase
+  npx quick-lorem --chars 100 --lowercase
 
   # Output
   lorem ipsum dolor sit amet, consectetur adipiscing elit. in maximus a odio eu imperdiet. morbi aucto
@@ -64,7 +64,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Uppercase output
   ```bash
-  npx x-lorem --chars 100 --upercase
+  npx quick-lorem --chars 100 --upercase
 
   # Output
   LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISCING ELIT. IN MAXIMUS A ODIO EU IMPERDIET. MORBI AUCTO
@@ -72,7 +72,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Random case output
   ```bash
-  npx x-lorem --chars 100 --randomcase
+  npx quick-lorem --chars 100 --randomcase
 
   # Output
   loREM IPsum DOLor sit AmEt, CONsecTetur ADIpISCIng elIt. IN maXiMUS A ODiO Eu impERdIEt. MoRbI AuctO
@@ -80,7 +80,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Capitalized output
   ```bash
-  npx x-lorem --chars 100 --capitalize
+  npx quick-lorem --chars 100 --capitalize
 
   # Output
   Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Maximus A Odio Eu Imperdiet. Morbi Aucto
@@ -88,7 +88,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Spaced vs non-spaced output. Notice the newlines count for the character count:
   ```bash
-  npx x-lorem --chars 1000 --spaced
+  npx quick-lorem --chars 1000 --spaced
 
   # Output
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus a odio eu imperdiet. Morbi auctor fringilla sollicitudin. Fusce id nisl urna. Quisque tristique odio et molestie semper. Maecenas sagittis justo mauris, id commodo nunc commodo nec. Nullam suscipit tempus velit, sit amet feugiat sem tincidunt sed. Cras et condimentum turpis. Duis congue eleifend nibh, non condimentum odio elementum at. Maecenas laoreet tellus eget mollis sodales. Mauris sed hendrerit elit. In blandit nunc arcu, at blandit ipsum gravida sit amet.
@@ -96,7 +96,7 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
   Vivamus dignissim ante aliquam, tempor orci eget, tristique sem. Nam vel mauris et magna volutpat maximus. Curabitur sagittis mi sed efficitur pellentesque. Nunc nec dolor quis lorem convallis sagittis a et purus. Nunc nec fermentum lectus. Pellentesque facilisis elementum congue. Sed tristique lobortis dui, a volutpat massa facilisis ultricies. Donec sit amet leo luctus, fringilla augue vel, pharetra urna. In hac habitasse platea dictumst. Phasellus interdum  
 
 
-  npx x-lorem --chars 1000
+  npx quick-lorem --chars 1000
 
   # Output
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus a odio eu imperdiet. Morbi auctor fringilla sollicitudin. Fusce id nisl urna. Quisque tristique odio et molestie semper. Maecenas sagittis justo mauris, id commodo nunc commodo nec. Nullam suscipit tempus velit, sit amet feugiat sem tincidunt sed. Cras et condimentum turpis. Duis congue eleifend nibh, non condimentum odio elementum at. Maecenas laoreet tellus eget mollis sodales. Mauris sed hendrerit elit. In blandit nunc arcu, at blandit ipsum gravida sit amet. Vivamus dignissim ante aliquam, tempor orci eget, tristique sem. Nam vel mauris et magna volutpat maximus. Curabitur sagittis mi sed efficitur pellentesque. Nunc nec dolor quis lorem convallis sagittis a et purus. Nunc nec fermentum lectus. Pellentesque facilisis elementum congue. Sed tristique lobortis dui, a volutpat massa facilisis ultricies. Donec sit amet leo luctus, fringilla augue vel, pharetra urna. In hac habitasse platea dictumst. Phasellus interdum n 
@@ -104,13 +104,13 @@ Notice the precedence rules described above. Using multiple concurrent flags wil
 
 - Precedence examples:
   ```bash
-  npx x-lorem --chars 250 --words 5
+  npx quick-lorem --chars 250 --words 5
 
   # Output
   Vivamus dignissim ante aliquam, tempor 
 
 
-  npx x-lorem --words 10 --capitalize --lowercase
+  npx quick-lorem --words 10 --capitalize --lowercase
 
   # Output
   Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit. In Maximus 
