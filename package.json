@@ -2,7 +2,7 @@
   "name": "quick-lorem",
   "version": "1.0.0",
   "description": "A quick and easy command line lorem ipsum generator",
-  "homepage": "https://github.com/Fayhen/npx-lorem",
+  "homepage": "https://github.com/Fayhen/quick-lorem",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
